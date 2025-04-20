@@ -1,0 +1,24 @@
+{
+  "name": "mcp-midudev",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "start": "node main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesthenos/MCP-desde-0-midudev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/codesthenos/MCP-desde-0-midudev/issues"
+  },
+  "homepage": "https://github.com/codesthenos/MCP-desde-0-midudev#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "zod": "^3.24.3"
+  }
+}
