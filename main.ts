@@ -1,4 +1,5 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
 
 // 1. Crear el servidor, maneja la comunicacion entre el cliente y el servidor
@@ -22,3 +23,7 @@ mcpServer.tool(
     content: [{ type: "text", text: `The weather in ${city} is sunny` }],
   })
 );
+
+// 3. Escuchar las conexiones de los clientes (le indicamos que no se conecte a internet, que todo sucede localmente)
+const transport = new StdioServerTransport();
+await mcpServer.connect(transport);
