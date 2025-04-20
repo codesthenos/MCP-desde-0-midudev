@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.ts",
   "scripts": {
-    "start": "node main.ts"
+    "start": "npx -y @modelcontextprotocol/inspector npx -y tsx main.ts"
   },
   "repository": {
     "type": "git",
